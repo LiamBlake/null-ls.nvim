@@ -11,6 +11,7 @@ M.chktex = h.make_builtin({
     generator_opts = {
         command = "chktex",
         to_stdin = true,
+        from_stderr = true,
         args = {
             -- Disable printing version information to stderr
             "-q",
